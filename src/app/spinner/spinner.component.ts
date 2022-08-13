@@ -8,7 +8,7 @@ import { LoadingStore } from './LoadingStore';
 })
 export class SpinnerComponent implements OnInit {
   constructor() {}
-  loading!: boolean;
+  loading: boolean | null = null;
 
   ngOnInit() {
     const loadingStore = LoadingStore.getInstance();
